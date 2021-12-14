@@ -22,7 +22,7 @@ public class HashSecond {
         }
 
         for(String key : map.keySet()){
-            for(int i = 1; i < key.length() ; i++){
+            for(int i = 1; i < map.get(key) ; i++){
                 if (map.containsKey(key.substring(0, i))){
                     return false;
                 }
