@@ -22,7 +22,7 @@ public class HashSecond {
         }
 
         for(String key : map.keySet()){
-            for(int i = 1; i < map.get(key) ; i++){
+            for(int i = 1; i < map.get(key) ; i++){         //중복 제거된 map.values로 for돌려 보고 싶음
                 if (map.containsKey(key.substring(0, i))){
                     return false;
                 }
